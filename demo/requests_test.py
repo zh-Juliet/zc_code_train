@@ -6,7 +6,7 @@
 @Author: ZhangQiang
 '''
 
-# 1.安装requests第三方包,导入
+# 安装requests第三方包,导入
 import requests
 
 # 请求头
@@ -19,17 +19,17 @@ headers = {
 }
 
 
-# 2.发送请求，获取响应
+# 发送请求，获取响应
 response = requests.get("http://httpbin.org/get",headers=headers)
 
-# 3.获取网页源代码,响应的html
+# 获取网页源代码,响应的html
 print(response.content.decode())
 
 # 请求头
 print(response.request.headers)
 
-# 4.状态码
+# 状态码
 print(response.status_code)
 
-# 5.响应头
+# 响应头
 print(response.headers)
