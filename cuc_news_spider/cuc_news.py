@@ -92,7 +92,7 @@ class CucNewsSpdier(object):
         # 1.发送中传要闻主页请求，获取详情页url
         detail_url_list = self.get_detail_page_url()
 
-        # 3.遍历详情页网址，获取没一条新闻的数据
+        # 2.遍历详情页网址，获取每一条新闻的数据
         for detail_url in detail_url_list:
             self.parse_detail_page(detail_url)
 
